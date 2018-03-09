@@ -34,14 +34,23 @@ max_rev = budget.max()
 max_rev
 
 #printing findings from above to a text file
+
 bank_findings = (
-print("Financial Analysis for Spreadsheet 1")
-print("------------------------------------")
-print("Total Months: " + str(total_month))
-print("Total Revenue: " + str(total_revenue))
-print("Average Revenue Change: " + str(avg_change))
-print("Greatest Increase in Revenue: " + str(max_rev))
+print("Financial Analysis for Spreadsheet 1"),
+print("------------------------------------"),
+print("Total Months: " + str(total_month)),
+print("Total Revenue: " + str(total_revenue)),
+print("Average Revenue Change: " + str(avg_change)),
+print("Greatest Increase in Revenue: " + str(max_rev)),
 print("Greatest Decrease in Revenue: " + str(min_rev))
 )
-sys.stdout = open(file, 'w')
-print(bank_findings)
+
+output_file_2 = open(results_file_2.txt, 'w')
+output_file_2.write("Financial Analysis for Spreadsheet 1"),
+output_file_2.write("------------------------------------"),
+output_file_2.write("Total Months: " + str(total_month)),
+output_file_2.write("Total Revenue: " + str(total_revenue)),
+output_file_2.write("Average Revenue Change: " + str(avg_change)),
+output_file_2.write("Greatest Increase in Revenue: " + str(max_rev)),
+output_file_2.write("Greatest Decrease in Revenue: " + str(min_rev))
+

@@ -62,17 +62,28 @@ print(cand_4_sum[2], cand_4_percent[2])
 
 #printing the findings to a text file
 poll_findings = (
-print("Election Results (Percent: Total Votes)")
-print("---------------------------------------")
-print("Total Votes: " + str(total_votes))
-print("---------------------------------------")
-print("Vestal: " + str(cand_1_percent[0]) + ": " + (str(cand_1_sum[0])) )
-print("Torres: " + str(cand_2_percent[0]) + ": " + (str(cand_2_sum[0])))
-print("Seth: " + str(cand_3_percent[0]) + ": " + (str(cand_3_sum[0])))
-print("Cordin: " + str(cand_4_percent[0]) + ": " + (str(cand_4_sum[0])))
-print("---------------------------------------")
-print("Winner: Vestal")
+print("Election Results (Percent: Total Votes)"),
+print("---------------------------------------"),
+print("Total Votes: " + str(total_votes)),
+print("---------------------------------------"),
+print("Vestal: " + str(cand_1_percent[0]) + ": " + (str(cand_1_sum[0])) ),
+print("Torres: " + str(cand_2_percent[0]) + ": " + (str(cand_2_sum[0]))),
+print("Seth: " + str(cand_3_percent[0]) + ": " + (str(cand_3_sum[0]))),
+print("Cordin: " + str(cand_4_percent[0]) + ": " + (str(cand_4_sum[0]))),
+print("---------------------------------------"),
+print("Winner: Vestal"),
 print("---------------------------------------")
 )
-sys.stdout = open(file, 'w')
-print(poll_findings)
+output_file = open(results_file.txt, 'w')
+output_file.write("Election Results (Percent: Total Votes)"),
+output_file.write("---------------------------------------"),
+output_file.write("Total Votes: " + str(total_votes)),
+output_file.write("---------------------------------------"),
+output_file.write("Vestal: " + str(cand_1_percent[0]) + ": " + (str(cand_1_sum[0])) ),
+output_file.write("Torres: " + str(cand_2_percent[0]) + ": " + (str(cand_2_sum[0]))),
+output_file.write("Seth: " + str(cand_3_percent[0]) + ": " + (str(cand_3_sum[0]))),
+output_file.write("Cordin: " + str(cand_4_percent[0]) + ": " + (str(cand_4_sum[0]))),
+output_file.write("---------------------------------------"),
+output_file.write("Winner: Vestal"),
+output_file.write("---------------------------------------")
+
